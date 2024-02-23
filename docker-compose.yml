@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:19.0.2
+    env_file:
+      # Ensure that the variables in .env match the same variables in devcontainer.json
+      - ./keycloak-config/keycloak.env
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    command:
+      - start-dev
+      # - --import-realm
+    volumes:
+      - ./keycloak-config/testRealm.json:/opt/keycloak/data/import/testRealm.json
