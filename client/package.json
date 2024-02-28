@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@react-keycloak/web": "^3.4.0",
+    "@react-keycloak/ssr": "^3.3.0",
+    "axios": "^1.6.7",
+    "cookie-cutter": "^0.2.0",
+    "js-cookie": "^3.0.5",
+    "next-auth": "^4.24.6",
+    "react-cookie": "^7.1.0"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6"
+  }
+}
