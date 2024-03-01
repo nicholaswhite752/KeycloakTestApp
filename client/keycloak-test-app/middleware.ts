@@ -14,6 +14,7 @@ export async function middleware(req: NextRequest) {
     return NextResponse.next();
 }
 
+// TODO: Should add a route matcher to not match to login page
 export const config = {
     matcher: ['/:path?'],
   }
