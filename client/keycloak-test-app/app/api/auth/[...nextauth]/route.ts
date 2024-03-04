@@ -41,7 +41,8 @@ export const authOptions: AuthOptions = {
     }),
   ],
   session: {
-    maxAge: 30 * 60
+    maxAge: 30 * 60,
+    strategy: "jwt"
   },
   events: {
     async signOut({ token }) {
